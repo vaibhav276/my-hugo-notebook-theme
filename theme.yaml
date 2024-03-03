@@ -1,0 +1,16 @@
+name: Theme name
+license: MIT
+licenselink: https://github.com/vaibhav276/my-hugo-notebook-theme/LICENSE
+description: My personal theme for my hugo notebooks
+homepage: https://github.com/vaibhav276/my-hugo-notebook-theme
+demosite: https://vaibhav276.github.io/my-hugo-notebook-example
+tags:
+  - posts
+features:
+  - some
+  - awesome
+  - features
+original:
+  author: Vaibhav Pujari
+  homepage: https://vaibhav276.github.io
+  repo: https://github.com/vaibhav276/my-hugo-notebook-theme
