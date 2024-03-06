@@ -1,1 +1,7 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<div class="py-4 bg-white fixed w-full bottom-0">
+    <span>
+        {{ with .Site.Params.footer }}
+        {{ replace . "{Year}" now.Year | markdownify }}
+        {{end}}
+    </span>
+</div>

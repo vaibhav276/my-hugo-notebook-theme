@@ -4,12 +4,17 @@
   {{ partial "head.html" . }}
 </head>
 <body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
+  <div class="container mx-24 mt-0 mb-6 min-w-300">
+    <header>
+      {{ partial "header.html" . }}
+    </header>
+  <div class="flex justify-center">
+    <div class="w-1/2 pt-24">
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+    </div>
+  </div>
   <footer>
     {{ partial "footer.html" . }}
   </footer>

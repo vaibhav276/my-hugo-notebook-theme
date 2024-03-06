@@ -1,10 +1,19 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+  {{ partial "breadcrumb.html" . }}
+  <h1 class="text-center">{{ .Title }}</h1>
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+  {{ if .Date }}
+    {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+    {{ $dateHuman := .Date | time.Format ":date_long" }}
+    <div class="text-center italic mb-6">
+      <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+    </div>
+  {{ end }}
 
   {{ .Content }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+  <div class="pt-8">
+    {{ partial "breadcrumb.html" . }}
+  </div>
+  <div class="pt-24"></div>
 {{ end }}

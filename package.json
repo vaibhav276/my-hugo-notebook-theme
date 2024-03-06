@@ -1,0 +1,30 @@
+{
+  "name": "my-hugo-notebook-theme",
+  "version": "1.0.0",
+  "description": "My personal theme for my notebooks on hugo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-tw": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/styles.css --minify",
+    "watch-tw": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaibhav276/my-hugo-notebook-theme.git"
+  },
+  "keywords": [
+    "hugo",
+    "theme"
+  ],
+  "author": "Vaibhav Pujari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vaibhav276/my-hugo-notebook-theme/issues"
+  },
+  "homepage": "https://github.com/vaibhav276/my-hugo-notebook-theme#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  },
+  "dependencies": {
+  }
+}
